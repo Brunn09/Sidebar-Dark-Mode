@@ -1,0 +1,14 @@
+h1 {
+    position: relative;
+    height: 100vh;
+    width: calc(100% - 88px);
+    left: 88px;
+    background: var(--body-color);
+    padding: 20px;
+
+}
+
+.text {
+    color: var(--text-color);
+}
+
