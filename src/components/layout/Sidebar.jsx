@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import {BsArrowRight,
         BsSearch,
         BsHouse,
@@ -20,15 +18,11 @@ import Logo from '../../assets/react.svg'
 import './Sidebar.css'
 
 import { useContext } from 'react'
-import { ThemeContext } from '../../context/themeContext'
+import { ThemeContext } from '../../context/themeContext' 
 
 const Sidebar = () => {
 
   const {theme, toggleTheme, openClosed, openCloseButton} = useContext(ThemeContext)
-  console.log(toggleTheme)
-  console.log(openCloseButton)
-
-  /*const [openClosed, setOpenClosed] = useState('open')*/
 
   return (
     <nav className={`sidebar ${openClosed}`}>
@@ -41,10 +35,7 @@ const Sidebar = () => {
                   <span className='side'>Sidebar </span>
                   <span className='darkmode'>+ Dark Mode</span>
                 </div>
-                <div className='arrow' onClick={/*() => {
-                  setOpenClosed(openClosed === 'open' ? 'close' : 'open')*/
-                  openCloseButton
-                }>
+                <div className='arrow' onClick={openCloseButton}>
                   <BsArrowLeft />
                 </div>
             </div>            

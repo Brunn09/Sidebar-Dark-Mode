@@ -1,12 +1,21 @@
 h1 {
+    position: relative;
     height: 100vh;
     width: calc(100% - 88px);
-    left: calc(var(--open) + 88px);
     background: var(--body-color);
     padding: 20px;
-
+    transition: .5s;
 }
 
+.open {
+    width: calc(100% - 25%);
+    left: var(--open);
+}
+
+.close {
+    left: var(--closed);
+    width: calc(100% - 88px);
+}
 
 .text {
     color: var(--text-color);
