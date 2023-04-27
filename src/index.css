@@ -19,6 +19,10 @@
   --tran-03: all .3s ease;
   --tran-04: all .4s ease;
   --tran-05: all .5s ease;
+
+  /* ################ SIDEBAR ################ */
+  --open: 25%;
+  --closed: 88px;
 }
 
 body {

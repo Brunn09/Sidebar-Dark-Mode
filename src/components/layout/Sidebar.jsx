@@ -24,12 +24,14 @@ import { ThemeContext } from '../../context/themeContext'
 
 const Sidebar = () => {
 
-  const {theme, toggleTheme} = useContext(ThemeContext)
+  const {theme, toggleTheme, openClosed, openCloseButton} = useContext(ThemeContext)
+  console.log(toggleTheme)
+  console.log(openCloseButton)
 
-  const [state, setState] = useState('open')
+  /*const [openClosed, setOpenClosed] = useState('open')*/
 
   return (
-    <nav className={`sidebar ${state}`}>
+    <nav className={`sidebar ${openClosed}`}>
         <header>
             <div className='image-text'>
                 <span className='image'>
@@ -39,9 +41,10 @@ const Sidebar = () => {
                   <span className='side'>Sidebar </span>
                   <span className='darkmode'>+ Dark Mode</span>
                 </div>
-                <div className='arrow' onClick={() => {
-                  setState(state === 'open' ? 'close' : 'open')
-                }}>
+                <div className='arrow' onClick={/*() => {
+                  setOpenClosed(openClosed === 'open' ? 'close' : 'open')*/
+                  openCloseButton
+                }>
                   <BsArrowLeft />
                 </div>
             </div>            
