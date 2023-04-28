@@ -7,6 +7,23 @@
     --text-color: #ccc;
   }
 
+.App {
+  background: var(--body-color);
+}
+
 .App.dark .switch::before {
   left: 25px;
+}
+
+
+/* Media Query  */
+
+/*  LANDSCAPE*/
+@media screen and (orientation: landscape){
+
+}
+
+/* PORTRAIT */
+@media screen and (orientation: portrait){
+  
 }
